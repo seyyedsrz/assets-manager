@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  @layer utilities {
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 100;
+      src: url('/public/fonts/woff/YekanBakhFaNum-thin.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-thin.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 300;
+      src: url('/public/fonts/woff/YekanBakhFaNum-Light.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-Light.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: normal;
+      src: url('/public/fonts/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 600;
+      src: url('/public/fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: bold;
+      src: url('/public/fonts/woff/YekanBakhFaNum-Bold.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 800;
+      src: url('/public/fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 900;
+      src: url('/public/fonts/woff/YekanBakhFaNum-Black.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-Black.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: Yekan Bakh FaNum;
+      font-style: normal;
+      font-weight: 950;
+      src: url('/public/fonts/woff/YekanBakhFaNum-ExtraBlack.woff') format('woff'),
+        url('/public/fonts/woff2/YekanBakhFaNum-ExtraBlack.woff2') format('woff2');
+    }
+
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+
+
+  * {
+    font-family: "Yekan Bakh FaNum", sans-serif;
+    font-feature-settings: "kern" on, "liga" on, "dlig" on;
+    -moz-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+    -webkit-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+    -ms-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+    -o-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+    border-color: hsl(var(--border));
+
+  }
+
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
