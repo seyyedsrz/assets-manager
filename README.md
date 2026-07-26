@@ -86,10 +86,6 @@ async getAll(): Promise<Asset[]> {
 }
 ```
 
-## مستندات
-
-- [راهنمای Setup Supabase](./SUPABASE_SETUP.md)
-- [AI Playbook](../.ai-playbook/README.md)
 
 ## لایسنس
 
